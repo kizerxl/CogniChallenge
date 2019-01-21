@@ -1,0 +1,737 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		764A7D5421F3C74E004A9DCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A7D5321F3C74E004A9DCA /* AppDelegate.swift */; };
+		764A7D5621F3C74E004A9DCA /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A7D5521F3C74E004A9DCA /* SignInVC.swift */; };
+		764A7D5921F3C74E004A9DCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764A7D5721F3C74E004A9DCA /* Main.storyboard */; };
+		764A7D5B21F3C750004A9DCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 764A7D5A21F3C750004A9DCA /* Assets.xcassets */; };
+		764A7D5E21F3C750004A9DCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764A7D5C21F3C750004A9DCA /* LaunchScreen.storyboard */; };
+		764A7D6921F3C750004A9DCA /* CogniChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A7D6821F3C750004A9DCA /* CogniChallengeTests.swift */; };
+		764A7D7421F3C750004A9DCA /* CogniChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A7D7321F3C750004A9DCA /* CogniChallengeUITests.swift */; };
+		764A7D8E21F3CED0004A9DCA /* VenuesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A7D8D21F3CED0004A9DCA /* VenuesVC.swift */; };
+		764A7D9021F3CEEC004A9DCA /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A7D8F21F3CEEC004A9DCA /* SignInPresenter.swift */; };
+		764A7D9621F3CFA6004A9DCA /* VenuePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A7D9521F3CFA6004A9DCA /* VenuePresenter.swift */; };
+		764A7D9821F3CFCE004A9DCA /* SignInProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A7D9721F3CFCE004A9DCA /* SignInProtocols.swift */; };
+		764A7D9C21F3D403004A9DCA /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A7D9B21F3D403004A9DCA /* Endpoints.swift */; };
+		764A7D9E21F3D59F004A9DCA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A7D9D21F3D59F004A9DCA /* User.swift */; };
+		764A7DA021F3D73C004A9DCA /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A7D9F21F3D73C004A9DCA /* SignInService.swift */; };
+		764A7DA221F4230C004A9DCA /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A7DA121F4230C004A9DCA /* Venue.swift */; };
+		764A7DA421F42484004A9DCA /* VenueService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A7DA321F42484004A9DCA /* VenueService.swift */; };
+		764A7DA721F424BE004A9DCA /* VenueProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A7DA621F424BE004A9DCA /* VenueProtocols.swift */; };
+		764A7DAA21F43756004A9DCA /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A7DA921F43756004A9DCA /* CustomAnnotationView.swift */; };
+		764A7DAC21F46409004A9DCA /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A7DAB21F46409004A9DCA /* CustomAnnotation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		764A7D6521F3C750004A9DCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 764A7D4821F3C74E004A9DCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 764A7D4F21F3C74E004A9DCA;
+			remoteInfo = CogniChallenge;
+		};
+		764A7D7021F3C750004A9DCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 764A7D4821F3C74E004A9DCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 764A7D4F21F3C74E004A9DCA;
+			remoteInfo = CogniChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		764A7D5021F3C74E004A9DCA /* CogniChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CogniChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		764A7D5321F3C74E004A9DCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		764A7D5521F3C74E004A9DCA /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		764A7D5821F3C74E004A9DCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		764A7D5A21F3C750004A9DCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		764A7D5D21F3C750004A9DCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		764A7D5F21F3C750004A9DCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		764A7D6421F3C750004A9DCA /* CogniChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CogniChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		764A7D6821F3C750004A9DCA /* CogniChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CogniChallengeTests.swift; sourceTree = "<group>"; };
+		764A7D6A21F3C750004A9DCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		764A7D6F21F3C750004A9DCA /* CogniChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CogniChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		764A7D7321F3C750004A9DCA /* CogniChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CogniChallengeUITests.swift; sourceTree = "<group>"; };
+		764A7D7521F3C750004A9DCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		764A7D8D21F3CED0004A9DCA /* VenuesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesVC.swift; sourceTree = "<group>"; };
+		764A7D8F21F3CEEC004A9DCA /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
+		764A7D9521F3CFA6004A9DCA /* VenuePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuePresenter.swift; sourceTree = "<group>"; };
+		764A7D9721F3CFCE004A9DCA /* SignInProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInProtocols.swift; sourceTree = "<group>"; };
+		764A7D9B21F3D403004A9DCA /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		764A7D9D21F3D59F004A9DCA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		764A7D9F21F3D73C004A9DCA /* SignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
+		764A7DA121F4230C004A9DCA /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		764A7DA321F42484004A9DCA /* VenueService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueService.swift; sourceTree = "<group>"; };
+		764A7DA621F424BE004A9DCA /* VenueProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueProtocols.swift; sourceTree = "<group>"; };
+		764A7DA921F43756004A9DCA /* CustomAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
+		764A7DAB21F46409004A9DCA /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		764A7D4D21F3C74E004A9DCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		764A7D6121F3C750004A9DCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		764A7D6C21F3C750004A9DCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		764A7D4721F3C74E004A9DCA = {
+			isa = PBXGroup;
+			children = (
+				764A7D5221F3C74E004A9DCA /* CogniChallenge */,
+				764A7D6721F3C750004A9DCA /* CogniChallengeTests */,
+				764A7D7221F3C750004A9DCA /* CogniChallengeUITests */,
+				764A7D5121F3C74E004A9DCA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		764A7D5121F3C74E004A9DCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				764A7D5021F3C74E004A9DCA /* CogniChallenge.app */,
+				764A7D6421F3C750004A9DCA /* CogniChallengeTests.xctest */,
+				764A7D6F21F3C750004A9DCA /* CogniChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		764A7D5221F3C74E004A9DCA /* CogniChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				764A7D9921F3D3DF004A9DCA /* Network */,
+				764A7D8221F3CDFE004A9DCA /* Venues */,
+				764A7D8121F3CDF6004A9DCA /* Sign In */,
+				764A7D5321F3C74E004A9DCA /* AppDelegate.swift */,
+				764A7D5721F3C74E004A9DCA /* Main.storyboard */,
+				764A7D5A21F3C750004A9DCA /* Assets.xcassets */,
+				764A7D5C21F3C750004A9DCA /* LaunchScreen.storyboard */,
+				764A7D5F21F3C750004A9DCA /* Info.plist */,
+			);
+			path = CogniChallenge;
+			sourceTree = "<group>";
+		};
+		764A7D6721F3C750004A9DCA /* CogniChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				764A7D6821F3C750004A9DCA /* CogniChallengeTests.swift */,
+				764A7D6A21F3C750004A9DCA /* Info.plist */,
+			);
+			path = CogniChallengeTests;
+			sourceTree = "<group>";
+		};
+		764A7D7221F3C750004A9DCA /* CogniChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				764A7D7321F3C750004A9DCA /* CogniChallengeUITests.swift */,
+				764A7D7521F3C750004A9DCA /* Info.plist */,
+			);
+			path = CogniChallengeUITests;
+			sourceTree = "<group>";
+		};
+		764A7D8121F3CDF6004A9DCA /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				764A7D8B21F3CE93004A9DCA /* Protocols */,
+				764A7D8621F3CE17004A9DCA /* Service */,
+				764A7D8521F3CE11004A9DCA /* Presenter */,
+				764A7D8421F3CE0C004A9DCA /* View */,
+				764A7D8321F3CE04004A9DCA /* Model */,
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		764A7D8221F3CDFE004A9DCA /* Venues */ = {
+			isa = PBXGroup;
+			children = (
+				764A7D8C21F3CE9C004A9DCA /* Protocols */,
+				764A7DA521F42489004A9DCA /* Service */,
+				764A7D8921F3CE29004A9DCA /* Presenter */,
+				764A7D8821F3CE25004A9DCA /* View */,
+				764A7D8721F3CE1F004A9DCA /* Model */,
+			);
+			path = Venues;
+			sourceTree = "<group>";
+		};
+		764A7D8321F3CE04004A9DCA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				764A7D9D21F3D59F004A9DCA /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		764A7D8421F3CE0C004A9DCA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				764A7D5521F3C74E004A9DCA /* SignInVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		764A7D8521F3CE11004A9DCA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				764A7D8F21F3CEEC004A9DCA /* SignInPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		764A7D8621F3CE17004A9DCA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				764A7D9F21F3D73C004A9DCA /* SignInService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		764A7D8721F3CE1F004A9DCA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				764A7DA121F4230C004A9DCA /* Venue.swift */,
+				764A7DA921F43756004A9DCA /* CustomAnnotationView.swift */,
+				764A7DAB21F46409004A9DCA /* CustomAnnotation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		764A7D8821F3CE25004A9DCA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				764A7D8D21F3CED0004A9DCA /* VenuesVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		764A7D8921F3CE29004A9DCA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				764A7D9521F3CFA6004A9DCA /* VenuePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		764A7D8B21F3CE93004A9DCA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				764A7D9721F3CFCE004A9DCA /* SignInProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		764A7D8C21F3CE9C004A9DCA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				764A7DA621F424BE004A9DCA /* VenueProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		764A7D9921F3D3DF004A9DCA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				764A7D9B21F3D403004A9DCA /* Endpoints.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		764A7DA521F42489004A9DCA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				764A7DA321F42484004A9DCA /* VenueService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		764A7D4F21F3C74E004A9DCA /* CogniChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 764A7D7821F3C750004A9DCA /* Build configuration list for PBXNativeTarget "CogniChallenge" */;
+			buildPhases = (
+				764A7D4C21F3C74E004A9DCA /* Sources */,
+				764A7D4D21F3C74E004A9DCA /* Frameworks */,
+				764A7D4E21F3C74E004A9DCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CogniChallenge;
+			productName = CogniChallenge;
+			productReference = 764A7D5021F3C74E004A9DCA /* CogniChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		764A7D6321F3C750004A9DCA /* CogniChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 764A7D7B21F3C750004A9DCA /* Build configuration list for PBXNativeTarget "CogniChallengeTests" */;
+			buildPhases = (
+				764A7D6021F3C750004A9DCA /* Sources */,
+				764A7D6121F3C750004A9DCA /* Frameworks */,
+				764A7D6221F3C750004A9DCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				764A7D6621F3C750004A9DCA /* PBXTargetDependency */,
+			);
+			name = CogniChallengeTests;
+			productName = CogniChallengeTests;
+			productReference = 764A7D6421F3C750004A9DCA /* CogniChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		764A7D6E21F3C750004A9DCA /* CogniChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 764A7D7E21F3C750004A9DCA /* Build configuration list for PBXNativeTarget "CogniChallengeUITests" */;
+			buildPhases = (
+				764A7D6B21F3C750004A9DCA /* Sources */,
+				764A7D6C21F3C750004A9DCA /* Frameworks */,
+				764A7D6D21F3C750004A9DCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				764A7D7121F3C750004A9DCA /* PBXTargetDependency */,
+			);
+			name = CogniChallengeUITests;
+			productName = CogniChallengeUITests;
+			productReference = 764A7D6F21F3C750004A9DCA /* CogniChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		764A7D4821F3C74E004A9DCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Felix Changoo";
+				TargetAttributes = {
+					764A7D4F21F3C74E004A9DCA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					764A7D6321F3C750004A9DCA = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 764A7D4F21F3C74E004A9DCA;
+					};
+					764A7D6E21F3C750004A9DCA = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 764A7D4F21F3C74E004A9DCA;
+					};
+				};
+			};
+			buildConfigurationList = 764A7D4B21F3C74E004A9DCA /* Build configuration list for PBXProject "CogniChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 764A7D4721F3C74E004A9DCA;
+			productRefGroup = 764A7D5121F3C74E004A9DCA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				764A7D4F21F3C74E004A9DCA /* CogniChallenge */,
+				764A7D6321F3C750004A9DCA /* CogniChallengeTests */,
+				764A7D6E21F3C750004A9DCA /* CogniChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		764A7D4E21F3C74E004A9DCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				764A7D5E21F3C750004A9DCA /* LaunchScreen.storyboard in Resources */,
+				764A7D5B21F3C750004A9DCA /* Assets.xcassets in Resources */,
+				764A7D5921F3C74E004A9DCA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		764A7D6221F3C750004A9DCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		764A7D6D21F3C750004A9DCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		764A7D4C21F3C74E004A9DCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				764A7DAC21F46409004A9DCA /* CustomAnnotation.swift in Sources */,
+				764A7DA021F3D73C004A9DCA /* SignInService.swift in Sources */,
+				764A7DA221F4230C004A9DCA /* Venue.swift in Sources */,
+				764A7D9021F3CEEC004A9DCA /* SignInPresenter.swift in Sources */,
+				764A7DAA21F43756004A9DCA /* CustomAnnotationView.swift in Sources */,
+				764A7D5621F3C74E004A9DCA /* SignInVC.swift in Sources */,
+				764A7D9621F3CFA6004A9DCA /* VenuePresenter.swift in Sources */,
+				764A7D9C21F3D403004A9DCA /* Endpoints.swift in Sources */,
+				764A7D9E21F3D59F004A9DCA /* User.swift in Sources */,
+				764A7D8E21F3CED0004A9DCA /* VenuesVC.swift in Sources */,
+				764A7DA421F42484004A9DCA /* VenueService.swift in Sources */,
+				764A7D5421F3C74E004A9DCA /* AppDelegate.swift in Sources */,
+				764A7D9821F3CFCE004A9DCA /* SignInProtocols.swift in Sources */,
+				764A7DA721F424BE004A9DCA /* VenueProtocols.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		764A7D6021F3C750004A9DCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				764A7D6921F3C750004A9DCA /* CogniChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		764A7D6B21F3C750004A9DCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				764A7D7421F3C750004A9DCA /* CogniChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		764A7D6621F3C750004A9DCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 764A7D4F21F3C74E004A9DCA /* CogniChallenge */;
+			targetProxy = 764A7D6521F3C750004A9DCA /* PBXContainerItemProxy */;
+		};
+		764A7D7121F3C750004A9DCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 764A7D4F21F3C74E004A9DCA /* CogniChallenge */;
+			targetProxy = 764A7D7021F3C750004A9DCA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		764A7D5721F3C74E004A9DCA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				764A7D5821F3C74E004A9DCA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		764A7D5C21F3C750004A9DCA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				764A7D5D21F3C750004A9DCA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		764A7D7621F3C750004A9DCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		764A7D7721F3C750004A9DCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		764A7D7921F3C750004A9DCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CogniChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = none.CogniChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		764A7D7A21F3C750004A9DCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CogniChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = none.CogniChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		764A7D7C21F3C750004A9DCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CogniChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = none.CogniChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CogniChallenge.app/CogniChallenge";
+			};
+			name = Debug;
+		};
+		764A7D7D21F3C750004A9DCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CogniChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = none.CogniChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CogniChallenge.app/CogniChallenge";
+			};
+			name = Release;
+		};
+		764A7D7F21F3C750004A9DCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CogniChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = none.CogniChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CogniChallenge;
+			};
+			name = Debug;
+		};
+		764A7D8021F3C750004A9DCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CogniChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = none.CogniChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CogniChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		764A7D4B21F3C74E004A9DCA /* Build configuration list for PBXProject "CogniChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				764A7D7621F3C750004A9DCA /* Debug */,
+				764A7D7721F3C750004A9DCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		764A7D7821F3C750004A9DCA /* Build configuration list for PBXNativeTarget "CogniChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				764A7D7921F3C750004A9DCA /* Debug */,
+				764A7D7A21F3C750004A9DCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		764A7D7B21F3C750004A9DCA /* Build configuration list for PBXNativeTarget "CogniChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				764A7D7C21F3C750004A9DCA /* Debug */,
+				764A7D7D21F3C750004A9DCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		764A7D7E21F3C750004A9DCA /* Build configuration list for PBXNativeTarget "CogniChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				764A7D7F21F3C750004A9DCA /* Debug */,
+				764A7D8021F3C750004A9DCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 764A7D4821F3C74E004A9DCA /* Project object */;
+}
