@@ -20,7 +20,7 @@ class SignInService: SignInServiceProtocol {
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpBody = jsonData
-        print("endpoint is \(endpoint)")
+
         if let passedInToken = token {
             request.setValue(passedInToken, forHTTPHeaderField: "Token")
         }
