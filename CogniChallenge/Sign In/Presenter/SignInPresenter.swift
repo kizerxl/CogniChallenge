@@ -31,16 +31,25 @@ class SignInPresenter {
         }
     
         let usersEndpoint = Endpoints.SignIn.users.url
-
+        let loginEndpoint = Endpoints.SignIn.login.url
+        
+        let defaults = UserDefaults.standard
+        let storedUserDict = defaults.object(forKey: "\(name)\(email)")
+        
         if let user = user {
             view.onLoginSuccess(user: user)
+        } else if let storedUserDict = storedUserDict as? [String: String],
+            let storedName = storedUserDict["name"],
+            let storedEmail = storedUserDict["email"],
+            let storedToken = storedUserDict["token"] {
+            attemptLogin(endpoint: loginEndpoint, name: storedName, email: storedEmail, token: storedToken)
         } else {
-            attemptLogin(endpoint: usersEndpoint, name: name, email: email)
+            attemptLogin(endpoint: usersEndpoint, name: name, email: email, token: nil)
         }
     }
     
-    private func attemptLogin(endpoint: String, name: String, email: String) {
-        service.signIn(endpoint: endpoint, name: name, email: email) { [weak self] recievedToken in
+    private func attemptLogin(endpoint: String, name: String, email: String, token: String?) {
+        service.signIn(endpoint: endpoint, name: name, email: email, token: token) { [weak self] recievedToken in
             guard let strongSelf = self else { return }
             
             DispatchQueue.main.sync {
@@ -56,5 +65,14 @@ class SignInPresenter {
     
     private func updateUser(name: String, email: String, token: String) {
         user = User(name: name, email: email, token: token)
+        let userDict = createUserDictionary(user: user!)
+        
+        let defaults = UserDefaults.standard
+        defaults.set(userDict, forKey: "\(name)\(email)")
     }
+    
+    private func createUserDictionary(user: User) -> [String: String] {
+        return ["name": user.name, "email": user.email, "token": user.token]
+    }
+    
 }

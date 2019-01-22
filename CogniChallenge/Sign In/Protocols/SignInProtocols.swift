@@ -17,6 +17,6 @@ protocol SignInServiceProtocol {
     typealias completion = (String?) -> ()
     
     func signIn(endpoint: String, name: String,
-                email: String, with completionHandler: @escaping completion)
+                email: String, token: String?, with completionHandler: @escaping completion)
 }
     

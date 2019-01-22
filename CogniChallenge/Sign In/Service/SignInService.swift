@@ -9,7 +9,7 @@
 import UIKit
 
 class SignInService: SignInServiceProtocol {
-    func signIn(endpoint: String, name: String, email: String, with completionHandler: @escaping completion) {
+    func signIn(endpoint: String, name: String, email: String, token: String?, with completionHandler: @escaping completion) {
         let json: [String: Any] = ["name": "\(name)",
                                    "email": "\(email)"]
         
@@ -20,6 +20,10 @@ class SignInService: SignInServiceProtocol {
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpBody = jsonData
+        print("endpoint is \(endpoint)")
+        if let passedInToken = token {
+            request.setValue(passedInToken, forHTTPHeaderField: "Token")
+        }
         
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard let response = response as? HTTPURLResponse else {
@@ -34,8 +38,6 @@ class SignInService: SignInServiceProtocol {
             
             completionHandler(recievedToken)
         }
-        
         task.resume()
-
     }
 }

@@ -20,17 +20,19 @@ protocol Endpoint {
 enum Endpoints {
     
     enum SignIn: Endpoint {
-        case users
+        case users, login
         
         public var path: String {
             switch self {
                 case .users: return "/users"
+                case .login: return "/login"
             }
         }
         
         public var url: String {
             switch self {
                 case .users: return "\(API.baseUrl)\(path)"
+                case .login: return "\(API.baseUrl)\(path)"
             }
         }
     }
